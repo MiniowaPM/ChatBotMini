@@ -17,7 +17,7 @@ def convert_squad(plik_squad, plik_wynikowy):
     with open(plik_wynikowy, 'w', encoding='utf-8') as f:
         json.dump(baza, f, ensure_ascii=False, indent=4)
 
-convert_squad('train-v2.0.json', 'model_dataset.json')
+convert_squad('model_dataset.json', 'model_dataset.json')
 
 print("Wczytywanie modelu...")
 model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
