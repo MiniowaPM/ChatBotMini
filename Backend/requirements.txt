@@ -1,0 +1,4 @@
+Flask
+numpy
+scikit_learn
+sentence_transformers
